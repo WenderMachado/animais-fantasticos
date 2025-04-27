@@ -94,6 +94,7 @@ a{
   height: 370px;
   overflow-y: scroll;
   grid-column: 2;
+  cursor: pointer;
 }
 .animais-lista::-webkit-scrollbar{
   width: 1.8rem;
@@ -201,5 +202,25 @@ a{
   }
   .footer{
     margin-bottom: 0;
+  }
+}
+
+.js-tabcontent section{
+  display: none;
+}
+
+.js-tabcontent section.ativo{
+  display: block !important;
+  animation: show .5s forwards;
+}
+
+@keyframes show{
+  from{
+    opacity: 0;
+    transform: matrix3d(-3rem, 0, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
