@@ -128,6 +128,7 @@ a{
   margin-top: 2rem;
   margin-bottom: 1rem;
   color:#e54;
+  cursor: pointer;
 }
 .faq-lista dt::before{
   content: "";
@@ -142,6 +143,7 @@ a{
   margin-bottom: 5rem;
   margin-left: 3rem;
   font-size: 1.6rem;
+
 }
 
 .mapa{
@@ -222,5 +224,34 @@ a{
   to{
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+.js-accordion dd{
+  display: none;
+}
+
+.js-accordion dt::after{
+  content: '⤋';
+  margin-left: 1rem;
+}
+.js-accordion dt.ativo::after{
+  content: '⤊';
+  margin-left: 1rem;
+}
+
+.js-accordion dd.ativo{
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown{
+  from{
+    opacity: 0;
+    max-height: 0;
+  }
+  to{
+    max-height: 20rem;
+    opacity: 1;
   }
 }
