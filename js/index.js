@@ -38,4 +38,22 @@ function initAccordion(){
 }
 initAccordion()
 
+function initScroll(){
+  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]')
 
+  function scrollToSection(ev) {
+    ev.preventDefault()
+    const href = ev.currentTarget.getAttribute('href')
+    const section = document.querySelector(href)
+  
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start", 
+    })
+  }
+  
+  linksInternos.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+  })
+}
+initScroll()

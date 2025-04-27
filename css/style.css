@@ -5,12 +5,14 @@ box-sizing: border-box;
 }
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body{
   background-color: #faf6ed;
   color: #222;
   display: grid;
   grid-template-columns: 1fr 12rem minmax(30rem, 80rem) 1fr;
+  scroll-behavior: smooth;
 }
 img{
   display: block;
