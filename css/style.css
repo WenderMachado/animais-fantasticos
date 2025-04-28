@@ -209,7 +209,7 @@ a{
   }
 }
 
-.js-tabcontent section{
+ .js-tabcontent section{
   display: none;
 }
 
@@ -256,4 +256,13 @@ a{
     max-height: 20rem;
     opacity: 1;
   }
+}
+ .js-scroll{
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+  opacity: 0;
+}
+.js-scroll.ativo{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
