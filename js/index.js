@@ -2,6 +2,7 @@ import { initScroll } from "./scroll-suave.js"
 import { animaScroll } from "./scroll-suave.js"
 import { initTabnav } from "./animacoes.js"
 import { initModal } from "./modal.js"
+import { toltip } from "./toltip.js"
 
 function initAccordion(){
   const accordionList = document.querySelectorAll('.js-accordion dt')
@@ -23,3 +24,4 @@ animaScroll()
 initScroll()
 initModal()
 initTabnav()
+toltip()

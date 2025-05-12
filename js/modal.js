@@ -3,24 +3,20 @@ const btnAbrir = document.querySelector('[data-modal="abrir"')
 const btnFechar = document.querySelector('[data-modal="fechar"')
 const containerModal = document.querySelector('[data-modal="container"')
 
-function abrirModal(event){
+function toggleModal(event){
 event.preventDefault()
-containerModal.classList.add('ativo')
+containerModal.classList.toggle('ativo')
 
 }
 
-function fecharModal(event){
-event.preventDefault()
-containerModal.classList.remove('ativo')
-}
 function cliqueForaModal(event){
   if(event.target === this){
-  fecharModal(event)
+  toggleModal(event)
   }
  
 }
 
-btnAbrir.addEventListener('click', abrirModal)
-btnFechar.addEventListener('click', fecharModal)
+btnAbrir.addEventListener('click', toggleModal)
+btnFechar.addEventListener('click', toggleModal)
 containerModal.addEventListener('click', cliqueForaModal)
 }
