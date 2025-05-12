@@ -18,6 +18,7 @@ html{
 img{
   display: block;
   max-width: 100%;
+  object-fit: fill;
 }
 ul{
   list-style: none;
