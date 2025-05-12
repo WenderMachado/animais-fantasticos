@@ -1,0 +1,27 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.grid-container{
+  background-color: #faf6ed;
+  color: #222;
+  display: grid;
+  grid-template-columns: 1fr 12rem minmax(30rem, 80rem) 1fr;
+  scroll-behavior: smooth;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
