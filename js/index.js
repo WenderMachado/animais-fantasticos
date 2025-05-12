@@ -1,8 +1,7 @@
-import { initScroll } from "./scroll-suave.js"
-import { animaScroll } from "./scroll-suave.js"
-import { initTabnav } from "./animacoes.js"
-import { initModal } from "./modal.js"
-import { toltip } from "./toltip.js"
+import { initScroll, animaScroll } from './scroll-suave.js';
+import { initTabnav } from './animacoes.js';
+import { initModal } from './modal.js';
+import { tooltip } from './tooltip.js';
 
 function initAccordion(){
   const accordionList = document.querySelectorAll('.js-accordion dt')
@@ -18,10 +17,11 @@ function initAccordion(){
     item.addEventListener('click', activeAccordion)
   })
 }
-initAccordion()
-
-animaScroll()
-initScroll()
-initModal()
-initTabnav()
-toltip()
+document.addEventListener('DOMContentLoaded', () => {
+  initAccordion();
+  initTabnav();
+  animaScroll();
+  initScroll();
+  initModal();
+  tooltip();
+})

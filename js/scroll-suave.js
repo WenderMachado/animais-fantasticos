@@ -16,7 +16,7 @@ export function initScroll(){
     link.addEventListener('click', scrollToSection);
   })
 }
-initScroll()
+
 
 
 export function animaScroll(){
@@ -35,4 +35,3 @@ function animaScroll(){
 window.addEventListener('scroll', animaScroll)
 }
 
-animaScroll()
