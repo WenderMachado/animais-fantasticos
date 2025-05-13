@@ -3,6 +3,7 @@ import { initTabnav } from './animacoes.js';
 import { initModal } from './modal.js';
 import { tooltip } from './tooltip.js';
 import { dropdown } from './dropdown.js';
+import { outsideClick } from './outsideClick.js';
 
 function initAccordion(){
   const accordionList = document.querySelectorAll('.js-accordion dt')
@@ -26,4 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initModal()
   tooltip()
   dropdown()
+  outsideClick()
 })
