@@ -2,6 +2,7 @@ import { initScroll, animaScroll } from './scroll-suave.js';
 import { initTabnav } from './animacoes.js';
 import { initModal } from './modal.js';
 import { tooltip } from './tooltip.js';
+import { dropdown } from './dropdown.js';
 
 function initAccordion(){
   const accordionList = document.querySelectorAll('.js-accordion dt')
@@ -18,10 +19,11 @@ function initAccordion(){
   })
 }
 document.addEventListener('DOMContentLoaded', () => {
-  initAccordion();
-  initTabnav();
-  animaScroll();
-  initScroll();
-  initModal();
-  tooltip();
+  initAccordion()
+  initTabnav()
+  animaScroll()
+  initScroll()
+  initModal()
+  tooltip()
+  dropdown()
 })
